@@ -141,7 +141,6 @@ const moveHead = (perimeter) => {
 
 const drawApple = () => {
     const nonPopulatedSquares = squares.filter((e) => !e.populated)
-    console.log(nonPopulatedSquares)
     const index = Math.floor(Math.random() * nonPopulatedSquares.length)
     nonPopulatedSquares[index].apple = true
     ctx.fillStyle = 'red'
