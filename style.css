@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3d3d3d;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+.points-label {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.points, .end-points {
+    display: inline;
+}
+
+.gameover-alert {
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    border: black 1px solid;
+    width: 50vh;
+    height: 50vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large
+}
+
+.difficulty-selector {
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    border: black 1px solid;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid lightseagreen;
+    padding: 10px;
+    border-radius: 10px;
+    color: lightseagreen;
+    transition: 0.2s;
+    font-weight: bold;
+    width: 30%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
